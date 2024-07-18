@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Homework</title>
+</head>
+<body>
+    <h1>Reviews:</h1>
+    <br>
+    {% for review in reviews %}
+    <ul>
+        <li><p>Username: {{ review.username }}</p></li>
+        <br>
+        <li><p>Text: {{ review.text }}</p></li>
+        <br>
+        <li><p>Date: {{ review.date }}</p></li>
+        <br>
+    </ul>
+    {% endfor %}
+</body>
+</html>
